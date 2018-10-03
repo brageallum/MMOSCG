@@ -1,3 +1,9 @@
+/* FONTS */
+@font-face {
+  font-family: 'NAVN PÅ FONT';
+  src: url('LINK TIL FONT');
+}
+
 /* GENERAL ELEMENTS */
 * {
   margin: 0px;
@@ -20,8 +26,79 @@ p {
 a {
   /* Add Necessary Design */
 }
+
+/* GENERAL CLASSES */
+.centerObject {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* SECTIONS */
 section.fullPageSection {
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(46deg, 0% #000, 60% );
+  background: #27ae60;
+  padding-top: 100px;
+}
+section.fullPageSection .fullPageContent {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+}
+section.fullPageSection .fullPageContent .contentCol {
+  flex: 1;
+  height: 100%;
+}
+section.fullPageSection .fullPageContent .mediaCol {
+  flex: 0 1 auto;
+  height: 100%;
+}
+section.fullPageSection .fullPageContent .mediaCol .media.mob {
+  width: 450px;
+  position: relative;
+  top: 100px;
+}
+.sectionTitle {
+  font-family: 'Helvetica',sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: #fff;
+  padding:0px 20px;
+}
+.sectionSubtitle {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #fff;
+  padding:0px 20px;
+  margin-top:20px;
+}
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2);
+  color: #fff;
+  font-family: 'Helvetica', sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 35px;
+}
+.btn.solid {
+  background-color: rgba(0,0,0,0.4);
+}
+.btn.heroBtn {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.btn.heroBtn:nth-child(1) {
+  margin-right: 10px;
 }
