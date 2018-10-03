@@ -1,13 +1,19 @@
 /* GENERAL ELEMENTS */
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background-image: url("../syrisk barn på telefon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1, h2, h3, h4, h5, h6 {
   /* Add Necessary Design */
+
 }
 p {
   /* Add Necessary Design */
