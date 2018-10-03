@@ -102,9 +102,6 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
 .btn.heroBtn:nth-child(1) {
   margin-right: 10px;
 }
-  background: linear-gradient(46deg, 0% #000, 60% );
-}
-
 
 /* NAVBAR */
 #topBar {
