@@ -40,7 +40,6 @@ section.fullPageSection {
   overflow: hidden;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   background: #27ae60;
   padding-top: 100px;
 }
@@ -103,7 +102,6 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
 .btn.heroBtn:nth-child(1) {
   margin-right: 10px;
 }
-=======
   background: linear-gradient(46deg, 0% #000, 60% );
 }
 
@@ -136,4 +134,3 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
   margin: 0 16px;
   text-transform: uppercase;
 }
->>>>>>> 79cb7138b042daf4865f935b32fd50486fff24a6
