@@ -52,6 +52,7 @@ section.fullPageSection .fullPageContent {
   display: flex;
 }
 section.fullPageSection .fullPageContent .contentCol {
+  text-align: center;
   flex: 1;
   height: 100%;
 }
@@ -101,6 +102,10 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
   margin-right: 10px;
 }
 
+/* SECTION SPECIFICS */
+section.fullPageSection#about {
+}
+
 /* NAVBAR */
 #topBar {
   width: 100%;
@@ -108,10 +113,14 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
   position: fixed;
   top: 0;
   z-index: 999999;
-  transition: background-color 0.2s;
+  transition: background-color 0.5s, box-shadow 0.5s;
 }
 #topBar.fixed {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#topBar.fixed .container .navItem {
+  
 }
 #topBar .container {
   max-width: 80%;
@@ -130,7 +139,7 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
   margin: 0 16px;
   color: rgba(255,255,255,1);
   font-family: 'Helvetica', sans-serif;
-  font-weight: 100;
+  font-weight: 700;
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: capitalize;
