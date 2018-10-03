@@ -128,7 +128,7 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
   line-height: 80px;
   text-decoration: none;
   margin: 0 16px;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,1);
   font-family: 'Helvetica', sans-serif;
   font-weight: 100;
   font-size: 15px;
@@ -136,6 +136,6 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
   text-transform: capitalize;
   opacity: 0.6;
 }
-.navItem.current {
+#topBar .container .navItem.current {
   opacity: 1;
 }
