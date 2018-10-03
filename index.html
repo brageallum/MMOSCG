@@ -9,7 +9,7 @@
 <body>
     <nav id="topBar">
         <div class="container">
-            <img class="navIcon" src="https://via.placeholder.com/60x60" alt="">
+            <img class="navIcon" src="https://bayareablackmarket.com/wp-content/uploads/2016/07/handshake-512.png" alt="">
             <a class="navItem" href="" alt="">Section 1</a>
             <a class="navItem" href="" alt="">Section 2</a>
             <a class="navItem" href="" alt="">Section 3</a>
@@ -30,5 +30,30 @@
             </div>
         </div>
     </section>
+    <section class="fullPageSection">
+        <div class="fullPageContent">
+            <div class="contentCol">
+                <div class="centerObject">
+                <h1 class="sectionTitle">Lorem ipsum dolor sit amet</h1>
+                <p class="sectionSubtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper fringilla sem ut luctus. Phasellus hendrerit, orci vitae consectetur varius.</p>
+                <a href="" class="btn heroBtn">Button 1</a>
+                <a href="" class="btn solid heroBtn">Button 2</a>
+                </div>
+            </div>
+            <div class="mediaCol">
+                <img src="https://d1erhn8sljv386.cloudfront.net/qF13RRuG3HP2GVuM1WFOg8oPZ9k=/fit-in/800x0/https://s3.amazonaws.com/lmbucket0/media/product/sprint-apple-iphone-x.png" class="media mob" alt="iPhone">
+            </div>
+        </div>
+    </section>
+    <script>
+        var topBar = document.getElementById('topBar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                topBar.setAttribute('class', 'fixed');
+            } else {
+                topBar.removeAttribute('class');
+            }
+        });
+    </script>
 </body>
 </html>
