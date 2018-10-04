@@ -41,7 +41,7 @@ section.fullPageSection {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: #27ae60;
+  background: #fff;
   padding-top: 100px;
 }
 section.fullPageSection .fullPageContent {
@@ -68,13 +68,13 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
 .sectionTitle {
   font-weight: 700;
   font-size: 3em;
-  color: #fff;
+  color: #222;
   padding:0px 20px;
 }
 .sectionSubtitle {
   font-weight: 100;
   font-size: 1.5em;
-  color: #fff;
+  color: #333;
   padding:0px 20px;
   margin-top:20px;
 }
@@ -84,14 +84,14 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
   height: 70px;
   line-height: 70px;
   text-align: center;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #000;
   color: #fff;
   text-decoration: none;
   font-size: 1.2em;
   border-radius: 35px;
 }
 .btn.solid {
-  background-color: rgba(0,0,0,0.4);
+  background-color: #27ae60;
 }
 .btn.heroBtn {
   margin-top: 50px;
@@ -116,7 +116,7 @@ section.fullPageSection#about {
   transition: background-color 0.5s, box-shadow 0.5s;
 }
 #topBar.fixed {
-  background-color: rgba(0,0,0,0.5);
+  background-color: #fff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 #topBar.fixed .container .navItem {
@@ -137,7 +137,7 @@ section.fullPageSection#about {
   line-height: 80px;
   text-decoration: none;
   margin: 0 16px;
-  color: rgba(255,255,255,1);
+  color: #000;
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 15px;
