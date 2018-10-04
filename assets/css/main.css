@@ -104,6 +104,13 @@ section.fullPageSection .fullPageContent .mediaCol .media.mob {
 
 /* SECTION SPECIFICS */
 section.fullPageSection#about {
+  background:url('../media/still/kids_splashing.jpg');
+  background-size:cover;
+}
+
+section.fullPageSection#about .sectionTitle,
+section.fullPageSection#about .sectionSubtitle {
+  color: white;
 }
 
 /* NAVBAR */
