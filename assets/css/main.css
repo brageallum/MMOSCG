@@ -141,7 +141,7 @@ section.fullPageSection#about .sectionSubtitle {
   transition: background-color 0.5s, box-shadow 0.5s;
 }
 #topBar.fixed {
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.3);
   /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
 }
 #topBar.fixed .container .navItem {
@@ -162,13 +162,12 @@ section.fullPageSection#about .sectionSubtitle {
   line-height: 80px;
   text-decoration: none;
   margin: 0 16px;
-  color: #333;
+  color: #000;
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: capitalize;
-  opacity: 0.6;
 }
 #topBar .container .navItem.current {
   opacity: 1;
