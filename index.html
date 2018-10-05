@@ -21,8 +21,8 @@
                 <div class="centerObject">
                 <h1 class="sectionTitle">Education for everyone</h1>
                 <p class="sectionSubtitle">Education is supposed to be free, and easily attainable. The world we currently live in, is not perfect. However -  we strive to work against that. With this app, kids affected by the Syrian Conflict gets the same opportunities as kids in other countries.</p>
-                <a href="" class="btn heroBtn">Read more</a>
-                <a href="" class="btn solid heroBtn">Download</a>
+                <a href="" class="btn heroBtn"><img src="assets/media/still/googleplay.png" alt="Get it on Google Play"></a>
+                <a href="" class="btn heroBtn"><img src="assets/media/still/appstore.png" alt="Get it on Appstore"></a>
                 </div>
             </div>
             <div class="mediaCol">
@@ -60,6 +60,24 @@
                 topBar.removeAttribute('class');
             }
         });
+    </script>
+    <script>
+
+        var sections = document.getElementsByClassName('fullPageSection');
+        var pageIndex = 0;
+
+        document.addEventListener('keydown', (e) => {
+            ([40, 38, 87, 83].indexOf(e.keyCode) > -1) ? e.preventDefault() : null;
+        }, false);
+
+        document.addEventListener('keyup', (e) => {
+            switch (e.keyCode) {
+                case 40:
+
+                break;
+            }
+        }, false);
+
     </script>
 </body>
 

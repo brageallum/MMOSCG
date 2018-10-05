@@ -49,7 +49,7 @@ section.fullPageSection .fullPageContent {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 0px 50px;
   display: flex;
 }
 section.fullPageSection .fullPageContent .contentCol {
@@ -61,6 +61,7 @@ section.fullPageSection .fullPageContent .contentCol {
 section.fullPageSection .fullPageContent .mediaCol {
   flex: 0 1 auto;
   height: 100%;
+  position: relative;
 }
 section.fullPageSection .fullPageContent .mediaCol .media.mob {
   width: 450px;
@@ -107,6 +108,12 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
+  background-color: transparent;
+  border-radius: 0px;
+  height: auto;
+}
+.btn.heroBtn img {
+  width: 100%;
 }
 .btn.heroBtn:nth-child(1) {
   margin-right: 10px;
