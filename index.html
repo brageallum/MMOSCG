@@ -64,6 +64,7 @@
     <script>
 
         var sections = document.getElementsByClassName('fullPageSection');
+        var pageIndex = 0;
 
         document.addEventListener('keydown', (e) => {
             ([40, 38, 87, 83].indexOf(e.keyCode) > -1) ? e.preventDefault() : null;
