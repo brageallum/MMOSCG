@@ -109,7 +109,7 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   margin-left: 10px;
   margin-right: 10px;
   background-color: transparent;
-  border-radius: 0px;
+  border-radius: 0;
   height: auto;
 }
 .btn.heroBtn img {
@@ -162,7 +162,7 @@ section.fullPageSection#about .sectionSubtitle {
   line-height: 80px;
   text-decoration: none;
   margin: 0 16px;
-  color: #000;
+  color: #333;
   font-family: 'Helvetica', sans-serif;
   font-weight: 700;
   font-size: 15px;
