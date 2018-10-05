@@ -5,8 +5,11 @@ window.addEventListener('scroll', (e) => {
     } else {
         topBar.removeAttribute('class');
     }
-    e.preventDefault();
-    e.stopPropagation();
+    for (var i = 0; i < document.getElementsByClassName('fullPageSection'); i++) {
+        if (window.scrollY > document.getElementsByClassName('fullPageSection')[i].offsetTop) {
+            
+        }
+    }
 });
 /*
 var sections = document.getElementsByClassName('fullPageSection');

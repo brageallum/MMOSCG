@@ -64,9 +64,9 @@ section.fullPageSection .fullPageContent .mediaCol {
   position: relative;
 }
 section.fullPageSection .fullPageContent .mediaCol .media.mob {
-  width: 450px;
+  width: 400px;
   position: relative;
-  top: 100px;
+  top: 150px;
 }
 section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   width: 100%;
