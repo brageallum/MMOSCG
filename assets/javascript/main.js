@@ -1,12 +1,14 @@
 var topBar = document.getElementById('topBar');
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', (e) => {
     if (window.scrollY > 0) {
         topBar.setAttribute('class', 'fixed');
     } else {
         topBar.removeAttribute('class');
     }
+    e.preventDefault();
+    e.stopPropagation();
 });
-
+/*
 var sections = document.getElementsByClassName('fullPageSection');
 var pageIndex = 0;
 
@@ -26,9 +28,14 @@ document.addEventListener('keyup', (e) => {
     }
 }, false);
 
+
+document.addEventListener('wheel', () => {
+    
+});
+
 function goToSlide(i) {
     window.scroll({
         top: sections[i].offsetTop,
         behavior: 'smooth'
     });
-}
+}*/
