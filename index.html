@@ -35,8 +35,10 @@
         <div class="fullPageContent">
             <div class="contentCol">
                 <div class="centerObject">
-                <h1 class="sectionTitle">Lorem ipsum dolor sit amet</h1>
-                <p class="sectionSubtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper fringilla sem ut luctus. Phasellus hendrerit, orci vitae consectetur varius.</p>
+                <h1 class="sectionTitle">About</h1>
+                <p class="sectionSubtitle">Our app is designed and developed to help Syrian children obtain the education they are missing. Through an entertaining
+                    and challenging app, the children will learn important skills such as language, history and mathematics.  
+                </p>
                 </div>
             </div>
         </div>
@@ -46,39 +48,12 @@
             <div class="contentCol">
                 <div class="centerObject">
                 <h1 class="sectionTitle">Lorem ipsum dolor sit amet</h1>
-                <p class="sectionSubtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus semper fringilla sem ut luctus. Phasellus hendrerit, orci vitae consectetur varius.</p>
+                <p class="sectionSubtitle">In conclusion, our app will contribute to increasing the quality and accessibility of education for children affected by the Syrian conflict. With our app, everyone with access to a smartphone or tablet can learn whenever they want, wherever they want. Hopefully, this will give the future generation the tools to rebuild a healthy society when peace has been restored.</p>
                 </div>
             </div>
         </div>
     </section>
-    <script>
-        var topBar = document.getElementById('topBar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 0) {
-                topBar.setAttribute('class', 'fixed');
-            } else {
-                topBar.removeAttribute('class');
-            }
-        });
-    </script>
-    <script>
-
-        var sections = document.getElementsByClassName('fullPageSection');
-        var pageIndex = 0;
-
-        document.addEventListener('keydown', (e) => {
-            ([40, 38, 87, 83].indexOf(e.keyCode) > -1) ? e.preventDefault() : null;
-        }, false);
-
-        document.addEventListener('keyup', (e) => {
-            switch (e.keyCode) {
-                case 40:
-
-                break;
-            }
-        }, false);
-
-    </script>
+    <script src="assets/javascript/main.js"></script>
 </body>
 
 </html>
