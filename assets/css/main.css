@@ -43,6 +43,8 @@ section.fullPageSection {
   width: 100%;
   height: 100%;
   background: #fff;
+}
+section.fullPageSection.heroSection {
   padding-top: 100px;
 }
 section.fullPageSection .fullPageContent {
@@ -66,7 +68,7 @@ section.fullPageSection .fullPageContent .mediaCol {
 section.fullPageSection .fullPageContent .mediaCol .media.mob {
   width: 400px;
   position: relative;
-  top: 150px;
+  top: 100px;
 }
 section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   width: 100%;
