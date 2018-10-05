@@ -11,7 +11,7 @@
         <div class="container">
             <img class="navIcon" src="https://png.icons8.com/cactus/win10/1600" alt="">
             <a class="navItem current" href="" alt="">Home</a>
-            <a class="navItem" href="" alt="">About</a>
+            <a class="navItem" href="#about" alt="">About</a>
             <a class="navItem" href="" alt="">Download App</a>
         </div>
     </nav>
@@ -51,42 +51,7 @@
             </div>
         </div>
     </section>
-    <script>
-        var topBar = document.getElementById('topBar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 0) {
-                topBar.setAttribute('class', 'fixed');
-            } else {
-                topBar.removeAttribute('class');
-            }
-        });
-    </script>
-    <script>
-
-        var sections = document.getElementsByClassName('fullPageSection');
-        var pageIndex = 0;
-
-        document.addEventListener('keydown', (e) => {
-            ([40, 38, 87, 83].indexOf(e.keyCode) > -1) ? e.preventDefault() : null;
-        }, false);
-
-        document.addEventListener('keyup', (e) => {
-            switch (e.keyCode) {
-                case 40:
-                    pageIndex += 1;
-                    goToSlide(pageIndex);
-                break;
-            }
-        }, false);
-        
-        function goToSlide(i) {
-            window.scroll({
-                top: sections[i].offsetTop,
-                behavior: 'smooth'
-            });
-        }
-
-    </script>
+    <script src="assets/javascript/main.js"></script>
 </body>
 
 </html>
