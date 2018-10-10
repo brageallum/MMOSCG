@@ -58,7 +58,7 @@ section.fullPageSection .fullPageContent .contentCol {
   text-align: center;
   flex: 1;
   height: 100%;
-  padding-right:50px;
+  /*padding-right:50px;*/
 }
 section.fullPageSection .fullPageContent .mediaCol {
   flex: 0 1 auto;
