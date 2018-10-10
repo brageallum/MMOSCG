@@ -126,7 +126,9 @@ section.fullPageSection#about,
 section.fullPageSection#conclusion{
   /* background:url('../media/still/kids_splashing.jpg');
   background-size:cover; */
-  background-color: #27ae60;
+  background-image: url(../barnpåtelefon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
