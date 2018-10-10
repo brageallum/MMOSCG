@@ -36,6 +36,9 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
+#aboutobject {
+  background: rgba(0,0,0,0.6);
+}
 
 /* SECTIONS */
 section.fullPageSection {
@@ -83,6 +86,7 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   font-size: 3em;
   color: #222;
   padding-right: 20px;
+
 }
 .sectionSubtitle {
   font-weight: 100;
@@ -128,11 +132,14 @@ section.fullPageSection#about {
   background-image: url(../barnpåtelefon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  
+
 }
 
 section.fullPageSection#about .sectionTitle,
 section.fullPageSection#about .sectionSubtitle {
   color: white;
+  
 }
 
 /* NAVBAR */
