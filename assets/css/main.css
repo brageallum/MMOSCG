@@ -54,7 +54,7 @@ section.fullPageSection .fullPageContent {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
-  padding: 0px 50px;
+  /*padding: 0px 50px;*/
   display: flex;
 }
 section.fullPageSection .fullPageContent .contentCol {
@@ -85,14 +85,14 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   font-weight: 700;
   font-size: 3em;
   color: #222;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
 
 }
 .sectionSubtitle {
   font-weight: 100;
   font-size: 1.5em;
   color: #333;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
   margin-top:20px;
 }
 .btn {
