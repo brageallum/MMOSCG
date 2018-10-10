@@ -126,7 +126,8 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
 }
 
 /* SECTION SPECIFICS */
-section.fullPageSection#about {
+section.fullPageSection#about,
+section.fullPageSection#conclusion{
   /* background:url('../media/still/kids_splashing.jpg');
   background-size:cover; */
   background-image: url(../barnpåtelefon.jpg);
@@ -136,8 +137,11 @@ section.fullPageSection#about {
 
 }
 
+
 section.fullPageSection#about .sectionTitle,
-section.fullPageSection#about .sectionSubtitle {
+section.fullPageSection#about .sectionSubtitle,
+section.fullPageSection#conclusion .sectionTitle,
+section.fullPageSection#conclusion .sectionSubtitle {
   color: white;
   
 }
@@ -190,4 +194,11 @@ section.fullPageSection#about .sectionSubtitle {
 }
 #topBar a{
     padding: 0 20px;
+}
+
+/*Jørgen sitt*/
+#teacher{
+  height: 500px;
+  width: auto; 
+  clip-path: circle(25%);
 }
