@@ -125,7 +125,9 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
 section.fullPageSection#about {
   /* background:url('../media/still/kids_splashing.jpg');
   background-size:cover; */
-  background-color: #27ae60;
+  background-image: url(../barnpåtelefon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section.fullPageSection#about .sectionTitle,
