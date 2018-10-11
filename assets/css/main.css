@@ -71,6 +71,7 @@ section.fullPageSection .fullPageContent .mediaCol {
   flex: 0 1 auto;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 870px) {
   section.fullPageSection .fullPageContent .mediaCol {
