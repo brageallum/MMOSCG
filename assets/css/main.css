@@ -36,16 +36,10 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
-#fadedBox{
+.centerObject.fadedBox{
   background: rgba(0,0,0,0.4);
-}
-#fadedBox2{
-  background: rgba(0,0,0,0.2);
-}
-#aboutobject {
-  background: rgba(0,0,0,0.6);
   padding: 15px 10px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 /* SECTIONS */
@@ -286,7 +280,4 @@ figcaption {
   font-size: 26px;
   color: #555;
   font-weight: 100;
-}
-.textBox {
-  padding: 20px;
 }
