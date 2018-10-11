@@ -141,25 +141,75 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   }
 }
 
+.fullPageSplit {
+  width: 100%;
+  height: 100%;
+}
+.fullPageSplit .contentCol, .fullPageSplit .mediaCol {
+  float: left;
+  height: 100%;
+}
+.fullPageSplit.ltr .contentCol, .fullPageSplit.ltr .mediaCol {
+  float: right;
+}
+.fullPageSplit .contentCol {
+  width: 50%;
+  background-color: #fff;
+  position: relative;
+}
+/*
+.fullPageSplit .contentCol::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 100px;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to right, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+}*/
+.fullPageSplit .contentCol .sectionTitle {
+  color: #666;
+  padding: 0px 50px;
+  font-weight: 100;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.fullPageSplit .contentCol .sectionSubtitle {
+  width: 100%;
+  padding:0px 50px;
+  color: #000;
+  font-weight: 100;
+}
+.fullPageSplit .mediaCol {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* SECTION SPECIFICS */
-section.fullPageSection#about{
+/*section.fullPageSection#about{
   background-image: url(../barnpåtelefon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
+/*
 section.fullPageSection#conclusion{
-  background-image: url(../to_syriske_jenter.jpg);
+  background-image: url(../media/still/to_syriske_jenter.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 
-section.fullPageSection#about .sectionTitle,
+/*section.fullPageSection#about .sectionTitle,
 section.fullPageSection#about .sectionSubtitle,
 section.fullPageSection#conclusion .sectionTitle,
 section.fullPageSection#conclusion .sectionSubtitle {
   color: white;
   
-}
+}*/
 
 /* NAVBAR */
 #topBar {
