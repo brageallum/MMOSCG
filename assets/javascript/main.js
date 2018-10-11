@@ -11,7 +11,7 @@ window.addEventListener('scroll', (e) => {
         }
     }
 });
-/*
+
 var sections = document.getElementsByClassName('fullPageSection');
 var pageIndex = 0;
 
@@ -30,15 +30,15 @@ document.addEventListener('keyup', (e) => {
             goToSlide(pageIndex);
     }
 }, false);
-
+/*
 
 document.addEventListener('wheel', () => {
     
-});
+});*/
 
 function goToSlide(i) {
     window.scroll({
         top: sections[i].offsetTop,
         behavior: 'smooth'
     });
-}*/
+}
