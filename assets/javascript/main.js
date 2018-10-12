@@ -1,19 +1,11 @@
-var topBar = document.getElementById('topBar');
-window.addEventListener('scroll', (e) => {
-    if (window.scrollY > 0) {
-        topBar.setAttribute('class', 'fixed');
-    } else {
-        topBar.removeAttribute('class');
-    }
-    for (var i = 0; i < document.getElementsByClassName('fullPageSection'); i++) {
-        if (window.scrollY > document.getElementsByClassName('fullPageSection')[i].offsetTop) {
-            
-        }
-    }
-});
-
 var sections = document.getElementsByClassName('fullPageSection');
 var pageIndex = 0;
+var pageIsScrolling = false;
+
+window.scroll({
+    top: 0,
+    behavior: "instant"
+});
 
 document.addEventListener('keydown', (e) => {
     ([40, 38, 87, 83].indexOf(e.keyCode) > -1) ? e.preventDefault() : null;
@@ -27,18 +19,44 @@ document.addEventListener('keyup', (e) => {
         break;
         case 38:
             pageIndex -= 1;
-            goToSlide(pageIndex);
+            if (goToSlide(pageIndex) == true) {
+                console.log('hi');
+            }
     }
 }, false);
-/*
 
-document.addEventListener('wheel', () => {
+function throttle(callback, timeDelta) {
+    var now = Date.now();
+
+    return (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        if (now + timeDelta <= Date.now()) {
+            callback(e);
+            now = Date.now();
+        }
+    };
+}
+
+
+document.addEventListener('wheel', throttle((e) => {
+        if (e.deltaY > 0) {
+            // DOWN
+            pageIndex = (pageIndex < (sections.length-1)) ? pageIndex + 1 : pageIndex;
     
-});*/
+            goToSlide(pageIndex);
+        } else if (e.deltaY < 0) {
+            // UP
+            pageIndex = (pageIndex > 0) ? pageIndex - 1 : pageIndex;
+            
+            goToSlide(pageIndex);
+        }
+    }, 1000));
 
 function goToSlide(i) {
+    console.log(i, sections[i].offsetTop);
     window.scroll({
         top: sections[i].offsetTop,
-        behavior: 'smooth'
+        behavior: "smooth"
     });
 }
