@@ -64,9 +64,7 @@ window.addEventListener('scroll', () => {
 function highlightCurrentPageInNavbar() {
     var index = getCurrentPageIndex();
     var sectionId = sections[index].getAttribute('id');
-    
     if (document.querySelectorAll('#topBar .navItem[href="#' + sectionId + '"]').length == 0) return;
-        
     document.querySelectorAll('#topBar .navItem.current')[0].classList.remove('current');
     document.querySelectorAll('#topBar .navItem[href="#' + sectionId + '"]')[0].classList.add('current');
 }
