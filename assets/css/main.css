@@ -57,7 +57,7 @@ section.fullPageSection {
   scroll-snap-align: center;
   border-bottom: 1px solid #ccc;
 }
-section.fullPageSection.heroSection {
+section.fullPageSection#home {
   padding-top: 100px;
 }
 section.fullPageSection .fullPageContent {
