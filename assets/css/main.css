@@ -82,11 +82,6 @@ section.fullPageSection .fullPageContent .mediaCol {
   position: relative;
   overflow: hidden;
 }
-@media only screen and (max-width: 870px) {
-  section.fullPageSection .fullPageContent .mediaCol {
-    display: none;
-  }
-}
 section.fullPageSection .fullPageContent .mediaCol .media.mob {
   width: 300px;
   position: absolute;
@@ -202,28 +197,6 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   background-position: center;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-
-/* SECTION SPECIFICS */
-/*section.fullPageSection#about{
-  background-image: url(../barnpåtelefon.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
-/*
-section.fullPageSection#conclusion{
-  background-image: url(../media/still/to_syriske_jenter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
-
-/*section.fullPageSection#about .sectionTitle,
-section.fullPageSection#about .sectionSubtitle,
-section.fullPageSection#conclusion .sectionTitle,
-section.fullPageSection#conclusion .sectionSubtitle {
-  color: white;
-  
-}*/
-
 /* NAVBAR */
 #topBar {
   width: 100%;
@@ -336,4 +309,53 @@ figcaption {
   font-size: 26px;
   color: #555;
   font-weight: 100;
+}
+
+@media only screen and (max-width: 870px) {
+  section.fullPageSection .fullPageContent .mediaCol {
+    display: none;
+  }
+  section.fullPageSection .fullPageSplit {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.fullPageSection .fullPageSplit .contentCol {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  section.fullPageSection .fullPageSplit .contentCol .centerObject {
+    top: auto;
+    transform: none;
+    padding: 30px 0;
+  }
+  .fullPageSplit .contentCol .sectionSubtitle {
+    font-size: 18px;
+  }
+  section.fullPageSection .fullPageSplit .mediaCol {
+    top: auto;
+    transform: none;
+    float: none;
+    width: 100%;
+    flex: 1;
+  }
+  section.fullPageSection .fullPageContent .contentCol .centerObject {
+    top: auto;
+    transform: none;
+    padding-top: 100px;
+  }
+  section.fullPageSection .fullPageContent .contentCol .centerObject .sectionTitle {
+    font-size: 2em;
+  }
+  section.fullPageSection .fullPageContent .contentCol .centerObject .sectionText {
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+  section.fullPageSection.heroSection .fullPageContent .contentCol .centerObject {
+    padding-top: 0px;
+  }
+  section.fullPageSection.heroSection .fullPageContent .contentCol .centerObject .sectionTitle {
+    font-size: 3em;
+  }
 }
