@@ -9,10 +9,11 @@
 <body>
     <nav id="topBar">
         <div class="container">
-            <img class="navIcon" src="https://png.icons8.com/cactus/win10/1600" alt="">
-            <a class="navItem current" href="" alt="">Home</a>
-            <a class="navItem" href="#about" alt="">About</a>
-            <a class="navItem" href="" alt="">Download App</a>
+            <img class="navIcon" src="assets/media/still/MudarisApp.png" alt="">
+            <a class="navItem current" href="" alt="" onclick="goToSlide(0)">Home</a>
+            <a class="navItem" href="#about" alt="" onclick="goToSlide(1)">About</a>
+            <a class="navItem" href="#how" alt="" onclick="goToSlide(2)">How</a>
+            <a class="navItem" href="" alt="" onclick="goToSlide(4)">Conclusion</a>
         </div>
     </nav>
     <section class="fullPageSection heroSection">
@@ -20,26 +21,18 @@
             <div class="contentCol">
                 <div class="centerObject">
                 <h1 class="sectionTitle">Education for everyone</h1>
-                <p class="sectionSubtitle">Education is supposed to be free and easily accessible. The world we currently live in, is not perfect. However -  we strive to work against that. With [APP NAME], kids affected by the Syrian Conflict gets the same opportunities as kids in other countries.</p>
+                <p class="sectionSubtitle">Education is supposed to be free and easily accessible. The world we currently live in, is not perfect. However -  we strive to work against that. With Mudaris App, kids affected by the Syrian Conflict gets the same opportunities as kids in other countries.</p>
                 <a href="" class="btn heroBtn"><img src="assets/media/still/googleplay.png" alt="Get it on Google Play"></a>
                 <a href="" class="btn heroBtn"><img src="assets/media/still/appstore.png" alt="Get it on Appstore"></a>
                 </div>
             </div>
             <div class="mediaCol">
-                <img src="https://d1erhn8sljv386.cloudfront.net/qF13RRuG3HP2GVuM1WFOg8oPZ9k=/fit-in/800x0/https://s3.amazonaws.com/lmbucket0/media/product/sprint-apple-iphone-x.png" class="media mob" alt="iPhone">
+                <img src="assets/media/still/phone.png" class="media mob" alt="iPhone" id="heroPhone">
                 <div class="fadeEffect"></div>
             </div>
         </div>
     </section>
     <section class="fullPageSection" id="about">
-        <!--div class="fullPageContent">
-            <div class="contentCol">
-                <div class="centerObject fadedBox">
-                    <h1 class="sectionTitle">About</h1>
-                    <p class="sectionSubtitle">Our app is designed and developed to help Syrian children obtain the education they are missing. Through an entertaining and challenging app, the children will learn important skills such as language, history and mathematics.</p>
-                </div>
-            </div>
-        </div>-->
         <div class="fullPageSplit">
             <div class="contentCol">
                 <div class="centerObject">
@@ -48,6 +41,16 @@
                 </div>
             </div>
             <div class="mediaCol" style="background-image: url('assets/media/still/barnpåtelefon.jpg');"></div>
+        </div>
+    </section>
+    <section class="fullPageSection" id="how">
+        <div class="fullPageContent">
+            <div class="contentCol">
+                <div class="centerObject">
+                    <h1 class="sectionTitle">How does <img class="inlineLogo" src="assets/media/still/MudarisApp.png"> work?</h1>
+                    <p class="sectionText">Signed up members will have access to all of the app's courses, with no expenses. Every day we will give new challenges in various topics to make them push their limits. They can bookmark their favorite courses, and earn points based on their performance. With enough points they will be able to decorate the theme of their app, and profile. Giving the memebers a visible goal will enhance the learning experience, and make learning fun. If they have trouble solving something, the app also presents thousands of tutorials on every topic, from Physics to Litterature. Having helping-resources available at all times is important, therefore there is also a social network section, where members can help eachother, or request answers from a legitimate professor in the field.</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="fullPageSection" id="learning">
@@ -68,14 +71,6 @@
         </div>
     </section>
     <section class="fullPageSection" id="conclusion">
-        <!--<div class="fullPageContent">
-            <div class="contentCol">
-                <div class="centerObject fadedBox">
-                <h1 class="sectionTitle">Conclusion</h1>
-                <p class="sectionSubtitle">In conclusion, our app will contribute to increasing the quality and accessibility of education for children affected by the Syrian conflict. With our app, everyone with access to a smartphone or tablet can learn whenever they want, wherever they want. Hopefully, this will give the future generation the tools to rebuild a healthy society when peace has been restored.</p>
-                </div>
-            </div>
-        </div>-->
         <div class="fullPageSplit ltr">
                 <div class="contentCol">
                     <div class="centerObject">

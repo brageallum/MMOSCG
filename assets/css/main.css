@@ -55,6 +55,7 @@ section.fullPageSection {
   height: 100%;
   background: #fff;
   scroll-snap-align: center;
+  border-bottom: 1px solid #ccc;
 }
 section.fullPageSection.heroSection {
   padding-top: 100px;
@@ -77,6 +78,7 @@ section.fullPageSection .fullPageContent .contentCol {
 section.fullPageSection .fullPageContent .mediaCol {
   flex: 0 1 auto;
   height: 100%;
+  width: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -86,9 +88,9 @@ section.fullPageSection .fullPageContent .mediaCol {
   }
 }
 section.fullPageSection .fullPageContent .mediaCol .media.mob {
-  width: 400px;
-  position: relative;
-  top: 100px;
+  width: 300px;
+  position: absolute;
+  bottom: 0px;
 }
 section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   width: 100%;
@@ -102,14 +104,22 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   font-weight: 700;
   font-size: 3em;
   color: #222;
-  /*padding-right: 20px;*/
-
+}
+.sectionTitle .inlineLogo {
+  height: 0.8em;
+}
+.sectionText {
+  font-family: 'Helvetica',sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 21px;
+  margin-top: 50px;
+  padding: 0px 50px;
 }
 .sectionSubtitle {
   font-weight: 100;
   font-size: 1.5em;
   color: #333;
-  /*padding-right: 20px;*/
   margin-top:20px;
 }
 .btn {
@@ -166,17 +176,6 @@ section.fullPageSection .fullPageContent .mediaCol .fadeEffect {
   width: 50%;
   position: relative;
 }
-/*
-.fullPageSplit .contentCol::after {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 100%;
-  width: 100px;
-  height: 100%;
-  display: block;
-  background: linear-gradient(to right, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
-}*/
 .fullPageSplit .contentCol .sectionTitle {
   color: #666;
   padding: 0px 50px;
@@ -243,7 +242,7 @@ section.fullPageSection#conclusion .sectionSubtitle {
 }
 #topBar .container .navIcon {
   margin-right: auto;
-  height: 60px;
+  width: 200px;
 }
 #topBar .container .navItem {
   line-height: 80px;
